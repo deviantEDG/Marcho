@@ -1,11 +1,11 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
-.header{
-	&__inner{
+.header {
+	&__inner {
 		padding: 40px 0;
 		display: flex;
 		justify-content: space-between;
@@ -13,34 +13,34 @@
 	}
 }
 
-.menu{
-	&__list{
+.menu {
+	&__list {
 		display: flex;
 	}
-	&__list-item + .menu__list-item{
+	&__list-item + .menu__list-item {
 		padding-left: 35px;
 	}
-	&__list-link{
+	&__list-link {
 		color: $title;
 		padding: 0 2px 1px;
 		@extend %roboto-400;
-		&:hover{
+		&:hover {
 			color: $accent;
 			border-bottom: 1px solid $accent;
 		}
 	}
-	&__list-link--active{
+	&__list-link--active {
 		color: $accent;
-	 	border-bottom: 1px solid $accent;
+		border-bottom: 1px solid $accent;
 	}
 }
 
-.user-nav{
+.user-nav {
 	display: flex;
-	&__link{
+	&__link {
 		position: relative;
 	}
-	&__num{
+	&__num {
 		position: absolute;
 		width: 20px;
 		height: 20px;
@@ -53,92 +53,92 @@
 		text-align: center;
 		line-height: 20px;
 	}
-	&__link + .user-nav__link{
+	&__link + .user-nav__link {
 		padding-left: 25px;
 	}
 }
 
 //=====================================================================================//
 
-.footer{
+.footer {
 	background-color: $bg;
 }
 
-.footer-top{
+.footer-top {
 	padding: 70px 0 40px;
 	border-bottom: 1px solid #efefef;
 	display: flex;
-	&__contact{
+	&__contact {
 		width: 250px;
 		margin-right: 50px;
 	}
-	&__nav{
+	&__nav {
 		width: 170px;
 		margin-right: 30px;
 	}
-	&__item-form{
+	&__item-form {
 		max-width: 470px;
 	}
-	&__logo{
+	&__logo {
 		margin-bottom: 33px;
 		display: block;
 	}
 	&__adress,
 	&__email,
-	&__phone{
+	&__phone {
 		display: block;
 		margin-bottom: 14px;
 	}
-	&__social-list{
+	&__social-list {
 		display: flex;
 		margin-top: 30px;
 		align-items: center;
 	}
-	&__social-item + .footer-top__social-item{
+	&__social-item + .footer-top__social-item {
 		margin-left: 20px;
 	}
-	&__social-link{
-		transition: all .3s;
-		path{
+	&__social-link {
+		transition: all 0.3s;
+		path {
 			fill: $default;
 		}
-		&:hover{
-			path{
+		&:hover {
+			path {
 				fill: $accent;
 			}
 		}
 	}
-	&__title{
+	&__title {
 		color: $title;
 		@extend %roboto-500;
 		margin-bottom: 40px;
 		font-size: 22px;
 		line-height: 1;
 	}
-	&__link{
+	&__link {
 		display: block;
 		margin-bottom: 14px;
 	}
-	&__text{
+	&__text {
 		margin-bottom: 25px;
 	}
-	&__form{
+	&__form {
 		display: flex;
-    align-items: center;
+		align-items: center;
 		justify-content: space-between;
 	}
-	&__form-input{
+	&__form-input {
 		background-color: #fff;
 		max-width: 320px;
 		width: 100%;
 		border: none;
 		padding: 12px 10px 12px 15px;
 		box-shadow: 0 7px 20px rgba(192, 192, 192, 0.3);
-		&::placeholder{
-			color: $default
+		&::placeholder {
+			color: $default;
 		}
-	}	
-	&__form-btn{
+	}
+	&__form-btn {
 		@extend %btn;
 		border: none;
 		cursor: pointer;
@@ -146,15 +146,15 @@
 	}
 }
 
-.footer-bottom{
+.footer-bottom {
 	height: 75px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	&__copy{
+	&__copy {
 		font-size: 12px;
 	}
-	&__accept-img{
+	&__accept-img {
 		display: inline;
 		margin-left: 25px;
 		vertical-align: middle;
@@ -163,24 +163,24 @@
 
 //=====================================================================================//
 
-.top-slider{
-	background-image: url('../images/top-slider-bg.png');
+.top-slider {
+	background-image: url("../images/top-slider-bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: $bg;
 	padding: 65px 0 45px;
-	&__container{
+	&__container {
 		max-width: 1560px;
 	}
-	&__item-box{
+	&__item-box {
 		display: flex;
 		justify-content: space-between;
-	}	
-	&__content{
+	}
+	&__content {
 		padding-top: 125px;
 		padding-left: 175px;
 	}
-	&__title{
+	&__title {
 		@extend %roboto-700;
 		max-width: 670px;
 		font-size: 58px;
@@ -188,21 +188,21 @@
 		color: $title;
 		margin-bottom: 35px;
 	}
-	&__text{
+	&__text {
 		max-width: 470px;
 		margin-bottom: 55px;
 	}
-	&__link{
+	&__link {
 		@extend %btn;
 	}
-	.slick-dots{
+	.slick-dots {
 		display: flex;
 		justify-content: center;
 		margin-top: -70px;
-		li{
+		li {
 			padding: 0 5px;
 			line-height: 0;
-			button{
+			button {
 				padding: 0;
 				font-size: 0;
 				background-color: transparent;
@@ -211,9 +211,9 @@
 				border-radius: 50%;
 				border: 1px solid transparent;
 				position: relative;
-				&::before{
+				&::before {
 					position: absolute;
-					content: '';
+					content: "";
 					width: 6px;
 					height: 6px;
 					border-radius: 50%;
@@ -223,34 +223,18 @@
 					transform: translate(-50%, -50%);
 				}
 			}
-			&.slick-active{
-				button{
+			&.slick-active {
+				button {
 					border-color: $accent;
 				}
-			}	
-			&.slick-active{
-				button::before{
+			}
+			&.slick-active {
+				button::before {
 					background-color: $accent;
-				}	
+				}
 			}
 		}
-	}	
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import 'media';
+@import "media";
