@@ -44,47 +44,51 @@ a {
 	margin: 0 auto 55px;
 }
 
-.breadcrumbs{
+.breadcrumbs {
 	display: inline-flex;
 	justify-content: center;
 	text-align: center;
 	padding-left: 25px;
 	position: relative;
-	&::before{
-		content: '';
+	&::before {
+		content: "";
 		position: absolute;
-		background-image: url('../images/icons/home-icon.svg');
+		background-image: url("../images/icons/home-icon.svg");
 		background-repeat: no-repeat;
 		width: 16px;
 		height: 16px;
 		left: 0;
 		top: 4px;
 	}
-	&__list{
+	&__list {
 		display: flex;
 	}
-	&__item{
+	&__item {
 		color: #727272;
 		padding-right: 40px;
 		position: relative;
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			position: absolute;
-			background-image: url('../images/icons/angle-right.svg');
+			background-image: url("../images/icons/angle-right.svg");
 			width: 9px;
 			height: 10px;
 			right: 15px;
 			top: 9px;
 		}
-		&:last-child{
+		&:last-child {
 			color: $accent;
 			padding-right: 0;
-			&::after{
+			&::after {
 				display: none;
 			}
 		}
 	}
-	&__link{
+	&__link {
 		color: inherit;
 	}
+}
+
+.header--page-404 {
+	background-color: $bg;
 }
