@@ -1736,18 +1736,18 @@
 	}
 }
 
-.blog-one{
-	&__text{
-		h4{
+.blog-one {
+	&__text {
+		h4 {
 			@extend %roboto-500;
 			color: $title;
 			font-size: 22px;
 			margin: 25px 0;
 		}
-		p{
+		p {
 			margin: 25px 0;
 		}
-		blockquote{
+		blockquote {
 			background-color: $bg;
 			border-left: 3px solid $accent;
 			color: $title;
@@ -1762,43 +1762,43 @@
 		padding: 30px;
 		margin-top: -1px;
 	}
-	&__left-img{
+	&__left-img {
 		float: left;
 		margin-right: 30px;
 		margin-bottom: 8px;
 	}
-	&__right-img{
+	&__right-img {
 		float: right;
 		margin-left: 30px;
 	}
-	&__info{
+	&__info {
 		display: flex;
 		margin-bottom: 25px;
 	}
-	&__info-link{
+	&__info-link {
 		padding-left: 28px;
 		margin-right: 30px;
 		position: relative;
-		&::before{
-			content: '';
+		&::before {
+			content: "";
 			position: absolute;
 			left: 0;
 			top: 0;
 			width: 16px;
-    	height: 16px;
-    	background-image: url('../images/icons/calendar.svg');
-    	background-repeat: no-repeat;
+			height: 16px;
+			background-image: url("../images/icons/calendar.svg");
+			background-repeat: no-repeat;
 		}
-	}	
-	&__info-link--comment::before{
-		background-image: url('../images/icons/comment.svg');
+	}
+	&__info-link--comment::before {
+		background-image: url("../images/icons/comment.svg");
 		top: 3px;
 	}
-	&__info-link--author::before{
-		background-image: url('../images/icons/user-red.svg');
+	&__info-link--author::before {
+		background-image: url("../images/icons/user-red.svg");
 	}
 	&__form-title,
-	&__comments-title{
+	&__comments-title {
 		text-transform: uppercase;
 		margin: 35px 0 25px;
 		color: $title;
@@ -1806,61 +1806,169 @@
 		font-size: 24px;
 		line-height: 26px;
 	}
-	.comments-form{
+	.comments-form {
 		border: none;
 	}
-	&__box{
+	&__box {
 		margin: 25px 0 35px;
 		display: flex;
 		justify-content: space-between;
 	}
 	&__tags,
-	&__share{
-		span{
+	&__share {
+		span {
 			text-transform: uppercase;
 			color: $title;
 			margin-right: 8px;
 		}
 	}
-	&__share{
-		a{
+	&__share {
+		a {
 			margin-right: 12px;
 			vertical-align: middle;
-			transition: all .3s;
-			path{
+			transition: all 0.3s;
+			path {
 				fill: $default;
 			}
-			&:hover{
-				path{
+			&:hover {
+				path {
 					fill: $accent;
 				}
 			}
 		}
 	}
-	&__author{
+	&__author {
 		border-bottom: 1px solid #ececec;
 		padding-bottom: 40px;
 		margin-bottom: 40px;
 		display: flex;
-	}	
-	&__author-img{
+	}
+	&__author-img {
 		width: 140px;
 		height: 140px;
 		object-fit: cover;
 		margin-right: 30px;
 	}
-	&__author-name{
+	&__author-name {
 		color: $title;
 		@extend %roboto-500;
 		font-size: 22px;
 		line-height: 26px;
 		margin-bottom: 30px;
 	}
-	&__text-input{
+	&__text-input {
 		width: 370px;
 	}
 }
 
+#map {
+	width: 100%;
+	height: 450px;
+}
 
+.map {
+	padding: 120px 0;
+}
+
+.contact {
+	padding-bottom: 120px;
+	&__inner {
+		display: flex;
+	}
+	&__info {
+		max-width: 370px;
+		margin-right: 30px;
+	}
+	&__info-title {
+		font-size: 48px;
+		color: $title;
+		@extend %roboto-700;
+		margin-bottom: 20px;
+		line-height: 58px;
+	}
+	&__info-text {
+		margin-bottom: 60px;
+	}
+	&__info-item {
+		margin-top: 55px;
+		color: $title;
+		padding-left: 80px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -5px;
+			width: 60px;
+			height: 60px;
+			box-shadow: 0 5px 20px rgba(146, 146, 146, 0.3);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-image: url("../images/icons/phone-icon.svg");
+			left: 20px;
+			top: 15px;
+		}
+	}
+	&__info-item--location::after {
+		width: 14px;
+		left: 23px;
+		background-image: url("../images/icons/location-icon.svg");
+	}
+	&__info-item--email::after {
+		width: 18px;
+		left: 21px;
+		background-image: url("../images/icons/email-icon.svg");
+	}
+	&__info-phone,
+	&__info-email {
+		display: block;
+		color: $title;
+	}
+	&__form {
+		width: 100%;
+		padding: 60px 40px;
+		box-shadow: 0 10px 40px rgba(172, 172, 172, 0.3);
+	}
+	&__form-box {
+		display: flex;
+		justify-content: space-between;
+		input {
+			width: 330px;
+		}
+	}
+	&__form-title {
+		font-size: 22px;
+		margin-bottom: 20px;
+		color: $title;
+		@extend %roboto-700;
+	}
+	&__form-input {
+		width: 100%;
+		display: block;
+		height: 60px;
+		background-color: $bg;
+		border: none;
+		padding: 0 24px;
+		margin-bottom: 30px;
+	}
+	&__form-textarea {
+		width: 100%;
+		display: block;
+		resize: none;
+		height: 200px;
+		background-color: $bg;
+		border: none;
+		padding: 24px;
+		margin-bottom: 30px;
+	}
+	&__form-btn {
+		@extend %btn;
+		letter-spacing: 3.2px;
+	}
+}
 
 @import "media";
