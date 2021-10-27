@@ -31,12 +31,40 @@
 		margin-bottom: 5px;
 	}
 	&__title {
-		text-align-last: left;
+		text-align: left;
 	}
 	&__text {
 		margin-bottom: 55px;
 	}
 	&__link {
 		@extend %btn;
+	}
+}
+
+@media (max-width: 1050px) {
+	.video-fashion {
+		&__inner {
+			display: block;
+		}
+		&__popup {
+			max-width: 100%;
+			background-position: center top;
+		}
+		&__content {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	.video-fashion {
+		padding: 60px 0;
+		&__popup {
+			max-height: 270px;
+		}
+		&__subtitle {
+			padding-top: 40px;
+			font-size: 18px;
+		}
 	}
 }
